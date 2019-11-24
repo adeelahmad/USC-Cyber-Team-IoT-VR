@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1574580009" profile_name="Intense scan, all TCP ports" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Sat Nov 23 23:20:09 2019" args="nmap -p 1-65535 -T4 -A -v 172.20.10.9"><scaninfo services="1-65535" protocol="tcp" numservices="65535" type="syn"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2019-11-23 23:20 PST
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 23:20
+Completed NSE at 23:20, 0.00s elapsed
+Initiating NSE at 23:20
+Completed NSE at 23:20, 0.00s elapsed
+Initiating NSE at 23:20
+Completed NSE at 23:20, 0.00s elapsed
+Initiating ARP Ping Scan at 23:20
+Scanning 172.20.10.9 [1 port]
+Completed ARP Ping Scan at 23:20, 0.06s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 23:20
+Completed Parallel DNS resolution of 1 host. at 23:20, 2.53s elapsed
+Initiating SYN Stealth Scan at 23:20
+Scanning 172.20.10.9 [65535 ports]
+Discovered open port 53/tcp on 172.20.10.9
+Discovered open port 80/tcp on 172.20.10.9
+Discovered open port 21031/tcp on 172.20.10.9
+Discovered open port 21034/tcp on 172.20.10.9
+Discovered open port 21027/tcp on 172.20.10.9
+Discovered open port 21036/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 13.49% done; ETC: 23:24 (0:03:19 remaining)
+Discovered open port 21026/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 27.09% done; ETC: 23:23 (0:02:44 remaining)
+Discovered open port 21030/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 40.53% done; ETC: 23:23 (0:02:14 remaining)
+Discovered open port 59152/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 54.58% done; ETC: 23:23 (0:01:41 remaining)
+Discovered open port 21022/tcp on 172.20.10.9
+Discovered open port 21023/tcp on 172.20.10.9
+Discovered open port 21028/tcp on 172.20.10.9
+Discovered open port 21032/tcp on 172.20.10.9
+Discovered open port 21029/tcp on 172.20.10.9
+Discovered open port 18100/tcp on 172.20.10.9
+Discovered open port 19100/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 68.42% done; ETC: 23:23 (0:01:10 remaining)
+Discovered open port 19004/tcp on 172.20.10.9
+Discovered open port 21025/tcp on 172.20.10.9
+Discovered open port 21033/tcp on 172.20.10.9
+Discovered open port 8819/tcp on 172.20.10.9
+Discovered open port 49152/tcp on 172.20.10.9
+Discovered open port 4515/tcp on 172.20.10.9
+Discovered open port 5001/tcp on 172.20.10.9
+SYN Stealth Scan Timing: About 84.26% done; ETC: 23:23 (0:00:34 remaining)
+Discovered open port 21001/tcp on 172.20.10.9
+Discovered open port 21035/tcp on 172.20.10.9
+Discovered open port 21021/tcp on 172.20.10.9
+Discovered open port 5356/tcp on 172.20.10.9
+Discovered open port 21024/tcp on 172.20.10.9
+Discovered open port 8899/tcp on 172.20.10.9
+Completed SYN Stealth Scan at 23:23, 210.04s elapsed (65535 total ports)
+Initiating Service scan at 23:23
+Scanning 29 services on 172.20.10.9
+Service scan Timing: About 51.72% done; ETC: 23:24 (0:00:34 remaining)
+Service scan Timing: About 68.97% done; ETC: 23:25 (0:00:36 remaining)
+Service scan Timing: About 72.41% done; ETC: 23:26 (0:00:51 remaining)
+Completed Service scan at 23:26, 156.85s elapsed (29 services on 1 host)
+Initiating OS detection (try #1) against 172.20.10.9
+Retrying OS detection (try #2) against 172.20.10.9
+NSE: Script scanning 172.20.10.9.
+Initiating NSE at 23:26
+Completed NSE at 23:27, 72.22s elapsed
+Initiating NSE at 23:27
+Completed NSE at 23:27, 2.77s elapsed
+Initiating NSE at 23:27
+Completed NSE at 23:27, 0.00s elapsed
+Nmap scan report for 172.20.10.9
+Host is up (0.061s latency).
+Not shown: 65506 closed ports
+PORT      STATE SERVICE        VERSION
+53/tcp    open  domain         dnsmasq 2.40
+80/tcp    open  http           GoAhead WebServer
+|_http-server-header: GoAhead-Webs
+4515/tcp  open  rtsp
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest: 
+|     RTSP/1.0 200 OK
+|     Audio-Jack-Status: connected; type=analog
+|     CSeq:
+|   HTTPOptions, RTSPRequest: 
+|     RTSP/1.0 200 OK
+|     Audio-Jack-Status: connected; type=analog
+|     CSeq: 
+|     Public: ANNOUNCE, RECORD, FLUSH, OPTIONS, DESCRIBE, SETUP, TEARDOWN, PAUSE, GET_PARAMETER, SET_PARAMETER
+|   SIPOptions: 
+|     RTSP/1.0 200 OK
+|     Audio-Jack-Status: connected; type=analog
+|     CSeq: 42 OPTIONS
+|_    Public: ANNOUNCE, RECORD, FLUSH, OPTIONS, DESCRIBE, SETUP, TEARDOWN, PAUSE, GET_PARAMETER, SET_PARAMETER
+5001/tcp  open  commplex-link?
+5356/tcp  open  ms-smlbiz?
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|_    Content-Length: 0
+8819/tcp  open  unknown
+| fingerprint-strings: 
+|   GenericLines, NULL: 
+|_    {"action":1003}
+8899/tcp  open  ospf-lite?
+| fingerprint-strings: 
+|   GenericLines: 
+|     AXX+SLV+001
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+MUT+000
+|     AXX+PMT+000
+|     AXX+TLK+OFF
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+TLK+OFF
+|     AXX+PMT+001
+|     AXX+PMT+000
+|     AXX+MUT+000
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+TLK+OFF
+|     AXX+PMT+001
+|     AXX+MUT+000
+|     AXX+PMT+000
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+TLK+OFF
+|     AXX+PMT+001
+|     AXX+PMT+000
+|     AXX+MUT+000
+|   NULL: 
+|     AXX+SLV+001
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+MUT+000
+|     AXX+PMT+000
+|     AXX+TLK+OFF
+|     AXX+TLK++ON
+|     AXX+VIS+LSN
+|     AXX+TLK+OFF
+|     AXX+PMT+001
+|     AXX+PMT+000
+|_    AXX+MUT+000
+18100/tcp open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, Help, NULL, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|_    FREE
+19004/tcp open  unknown
+19100/tcp open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, NULL, RPCCheck, RTSPRequest: 
+|_    FREE
+21001/tcp open  unknown
+| fingerprint-strings: 
+|   GenericLines, NULL: 
+|     Data-Port:21021
+|     Ver:2
+|     ntp:687478538253
+|   Help: 
+|     Data-Port:21021
+|     Ver:2
+|     ntp:699869478254
+|   JavaRMI: 
+|     Data-Port:21021
+|     Ver:2
+|     ntp:714947898254
+|   giop: 
+|     Data-Port:21021
+|     Ver:2
+|_    ntp:719161658254
+21021/tcp open  unknown
+21022/tcp open  unknown
+21023/tcp open  unknown
+21024/tcp open  unknown
+21025/tcp open  unknown
+21026/tcp open  unknown
+21027/tcp open  unknown
+21028/tcp open  unknown
+21029/tcp open  unknown
+21030/tcp open  unknown
+21031/tcp open  unknown
+21032/tcp open  unknown
+21033/tcp open  unknown
+21034/tcp open  unknown
+21035/tcp open  unknown
+21036/tcp open  unknown
+49152/tcp open  unknown
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest: 
+|     HTTP/1.0 404 Not Found
+|     SERVER: Linux/2.6.36+
+|     CONTENT-LENGTH: 48
+|     CONTENT-TYPE: text/html
+|     &lt;html&gt;&lt;body&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+|   HTTPOptions: 
+|     HTTP/0.0 501 Not Implemented
+|     SERVER: Linux/2.6.36+
+|     CONTENT-LENGTH: 54
+|     CONTENT-TYPE: text/html
+|_    &lt;html&gt;&lt;body&gt;&lt;h1&gt;501 Not Implemented&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+59152/tcp open  unknown
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 404 Not Found
+|     SERVER: Linux/2.6.36+
+|     CONTENT-LENGTH: 48
+|     CONTENT-TYPE: text/html
+|     &lt;html&gt;&lt;body&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+|   HTTPOptions: 
+|     HTTP/0.0 501 Not Implemented
+|     SERVER: Linux/2.6.36+
+|     CONTENT-LENGTH: 54
+|     CONTENT-TYPE: text/html
+|_    &lt;html&gt;&lt;body&gt;&lt;h1&gt;501 Not Implemented&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+9 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port4515-TCP:V=7.80%I=7%D=11/23%Time=5DDA3009%P=x86_64-pc-linux-gnu%r(G
+SF:enericLines,46,"RTSP/1\.0\x20200\x20OK\r\nAudio-Jack-Status:\x20connect
+SF:ed;\x20type=analog\r\nCSeq:\x20\r\n\r\n")%r(GetRequest,46,"RTSP/1\.0\x2
+SF:0200\x20OK\r\nAudio-Jack-Status:\x20connected;\x20type=analog\r\nCSeq:\
+SF:x20\r\n\r\n")%r(HTTPOptions,B0,"RTSP/1\.0\x20200\x20OK\r\nAudio-Jack-St
+SF:atus:\x20connected;\x20type=analog\r\nCSeq:\x20\r\nPublic:\x20ANNOUNCE,
+SF:\x20RECORD,\x20FLUSH,\x20OPTIONS,\x20DESCRIBE,\x20SETUP,\x20TEARDOWN,\x
+SF:20PAUSE,\x20GET_PARAMETER,\x20SET_PARAMETER\r\n\r\n")%r(RTSPRequest,B0,
+SF:"RTSP/1\.0\x20200\x20OK\r\nAudio-Jack-Status:\x20connected;\x20type=ana
+SF:log\r\nCSeq:\x20\r\nPublic:\x20ANNOUNCE,\x20RECORD,\x20FLUSH,\x20OPTION
+SF:S,\x20DESCRIBE,\x20SETUP,\x20TEARDOWN,\x20PAUSE,\x20GET_PARAMETER,\x20S
+SF:ET_PARAMETER\r\n\r\n")%r(FourOhFourRequest,46,"RTSP/1\.0\x20200\x20OK\r
+SF:\nAudio-Jack-Status:\x20connected;\x20type=analog\r\nCSeq:\x20\r\n\r\n"
+SF:)%r(SIPOptions,BA,"RTSP/1\.0\x20200\x20OK\r\nAudio-Jack-Status:\x20conn
+SF:ected;\x20type=analog\r\nCSeq:\x2042\x20OPTIONS\r\nPublic:\x20ANNOUNCE,
+SF:\x20RECORD,\x20FLUSH,\x20OPTIONS,\x20DESCRIBE,\x20SETUP,\x20TEARDOWN,\x
+SF:20PAUSE,\x20GET_PARAMETER,\x20SET_PARAMETER\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5356-TCP:V=7.80%I=7%D=11/23%Time=5DDA300E%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,40,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\
+SF:r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,40,"HTTP/1\.1\x20404\x2
+SF:0Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n")
+SF:%r(RTSPRequest,40,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20c
+SF:lose\r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8819-TCP:V=7.80%I=7%D=11/23%Time=5DDA3004%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,23,"\x18\x96\x18\x20\x0f\0\0\0\xb8\x04\0\0\0\0\0\0\0\0\0\0{\"action
+SF:\":1003}")%r(GenericLines,23,"\x18\x96\x18\x20\x0f\0\0\0\xb8\x04\0\0\0\
+SF:0\0\0\0\0\0\0{\"action\":1003}");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8899-TCP:V=7.80%I=7%D=11/23%Time=5DDA3004%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,180,"\x18\x96\x18\x20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+SLV
+SF:\+001\n\x18\x96\x18\x20\x0c\0\0\0\x04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+
+SF:\+ON\n\x18\x96\x18\x20\x0c\0\0\x000\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LS
+SF:N\n\x18\x96\x18\x20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+MUT\+000\
+SF:n\x18\x96\x18\x20\x0c\0\0\0\xd2\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\
+SF:x18\x96\x18\x20\x0c\0\0\0\x17\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x1
+SF:8\x96\x18\x20\x0c\0\0\0\x04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+\+ON\n\x18
+SF:\x96\x18\x20\x0c\0\0\x000\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LSN\n\x18\x9
+SF:6\x18\x20\x0c\0\0\0\x17\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x18\x96\
+SF:x18\x20\x0c\0\0\0\xd3\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+001\n\x18\x96\x1
+SF:8\x20\x0c\0\0\0\xd2\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\x18\x96\x18\
+SF:x20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+MUT\+000\n")%r(GenericLin
+SF:es,300,"\x18\x96\x18\x20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+SLV\
+SF:+001\n\x18\x96\x18\x20\x0c\0\0\0\x04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+\
+SF:+ON\n\x18\x96\x18\x20\x0c\0\0\x000\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LSN
+SF:\n\x18\x96\x18\x20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+MUT\+000\n
+SF:\x18\x96\x18\x20\x0c\0\0\0\xd2\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\x
+SF:18\x96\x18\x20\x0c\0\0\0\x17\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x18
+SF:\x96\x18\x20\x0c\0\0\0\x04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+\+ON\n\x18\
+SF:x96\x18\x20\x0c\0\0\x000\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LSN\n\x18\x96
+SF:\x18\x20\x0c\0\0\0\x17\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x18\x96\x
+SF:18\x20\x0c\0\0\0\xd3\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+001\n\x18\x96\x18
+SF:\x20\x0c\0\0\0\xd2\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\x18\x96\x18\x
+SF:20\x0c\0\0\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+MUT\+000\n\x18\x96\x18\x20
+SF:\x0c\0\0\0\x04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+\+ON\n\x18\x96\x18\x20\
+SF:x0c\0\0\x000\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LSN\n\x18\x96\x18\x20\x0c
+SF:\0\0\0\x17\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x18\x96\x18\x20\x0c\0
+SF:\0\0\xd3\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+001\n\x18\x96\x18\x20\x0c\0\0
+SF:\0\xd7\x02\0\0\0\0\0\0\0\0\0\0AXX\+MUT\+000\n\x18\x96\x18\x20\x0c\0\0\0
+SF:\xd2\x02\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\x18\x96\x18\x20\x0c\0\0\0\x
+SF:04\x03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+\+ON\n\x18\x96\x18\x20\x0c\0\0\x000
+SF:\x03\0\0\0\0\0\0\0\0\0\0AXX\+VIS\+LSN\n\x18\x96\x18\x20\x0c\0\0\0\x17\x
+SF:03\0\0\0\0\0\0\0\0\0\0AXX\+TLK\+OFF\n\x18\x96\x18\x20\x0c\0\0\0\xd3\x02
+SF:\0\0\0\0\0\0\0\0\0\0AXX\+PMT\+001\n\x18\x96\x18\x20\x0c\0\0\0\xd2\x02\0
+SF:\0\0\0\0\0\0\0\0\0AXX\+PMT\+000\n\x18\x96\x18\x20\x0c\0\0\0\xd7\x02\0\0
+SF:\0\0\0\0\0\0\0\0AXX\+MUT\+000\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port18100-TCP:V=7.80%I=7%D=11/23%Time=5DDA3002%P=x86_64-pc-linux-gnu%r(
+SF:NULL,4,"FREE")%r(GenericLines,4,"FREE")%r(GetRequest,4,"FREE")%r(HTTPOp
+SF:tions,4,"FREE")%r(RTSPRequest,4,"FREE")%r(RPCCheck,4,"FREE")%r(DNSVersi
+SF:onBindReqTCP,4,"FREE")%r(DNSStatusRequestTCP,4,"FREE")%r(Help,4,"FREE")
+SF:%r(SSLSessionReq,4,"FREE")%r(TerminalServerCookie,4,"FREE")%r(TLSSessio
+SF:nReq,4,"FREE");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port19004-TCP:V=7.80%I=7%D=11/23%Time=5DDA3004%P=x86_64-pc-linux-gnu%r(
+SF:NULL,918,"\"\x11\0\xff\x02\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\"\x11\0\xff\x02\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0")%r(GenericLines,15
+SF:38,"\"\x11\0\xff\x02\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\"\x11\0\xff\x02\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port19100-TCP:V=7.80%I=7%D=11/23%Time=5DDA3003%P=x86_64-pc-linux-gnu%r(
+SF:NULL,4,"FREE")%r(GenericLines,4,"FREE")%r(GetRequest,4,"FREE")%r(HTTPOp
+SF:tions,4,"FREE")%r(RTSPRequest,4,"FREE")%r(RPCCheck,4,"FREE")%r(DNSVersi
+SF:onBindReqTCP,4,"FREE")%r(DNSStatusRequestTCP,4,"FREE");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21001-TCP:V=7.80%I=7%D=11/23%Time=5DDA3004%P=x86_64-pc-linux-gnu%r(
+SF:NULL,40,"Data-Port:21021\0Ver:2\0\0\0ntp:687478538253\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0")%r(GenericLines,40,"Data-Port:21021\0Ve
+SF:r:2\0\0\0ntp:687478538253\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0")%r(Help,40,"Data-Port:21021\0Ver:2\0\0\0ntp:699869478254\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0")%r(JavaRMI,40,"Data-Port:21021\0
+SF:Ver:2\0\0\0ntp:714947898254\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0")%r(giop,40,"Data-Port:21021\0Ver:2\0\0\0ntp:719161658254\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21022-TCP:V=7.80%I=7%D=11/23%Time=5DDA3015%P=x86_64-pc-linux-gnu%r(
+SF:TerminalServer,48,"\x98\xba\xdc\xfe\0\0\0\0\x06\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0i\x87BZ\x92\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+MAC Address: 00:22:6C:88:15:DA (LinkSprite Technologies)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   60.56 ms 172.20.10.9
+
+NSE: Script Post-scanning.
+Initiating NSE at 23:27
+Completed NSE at 23:27, 0.00s elapsed
+Initiating NSE at 23:27
+Completed NSE at 23:27, 0.00s elapsed
+Initiating NSE at 23:27
+Completed NSE at 23:27, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 451.11 seconds
+           Raw packets sent: 67496 (2.976MB) | Rcvd: 66959 (2.678MB)
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="172.20.10.9"></address><address addrtype="mac" vendor="LinkSprite Technologies" addr="00:22:6C:88:15:DA"></address><hostnames></hostnames><ports><extraports count="65506" state="closed"></extraports><port protocol="tcp" portid="53"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="dnsmasq" version="2.40" method="probed" conf="10" name="domain"></service></port><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="64"></state><service product="GoAhead WebServer" method="probed" conf="10" name="http"></service></port><port protocol="tcp" portid="4515"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="probed" conf="10" name="rtsp"></service></port><port protocol="tcp" portid="5001"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="commplex-link"></service></port><port protocol="tcp" portid="5356"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="ms-smlbiz"></service></port><port protocol="tcp" portid="8819"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="8899"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="ospf-lite"></service></port><port protocol="tcp" portid="18100"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="19004"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="19100"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21001"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21021"><state reason="syn-ack" state="open" reason_ttl="64"></state><service></service></port><port protocol="tcp" portid="21022"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21023"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21024"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21025"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21026"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21027"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21028"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21029"><state reason="syn-ack" state="open" reason_ttl="64"></state><service></service></port><port protocol="tcp" portid="21030"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21031"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21032"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21033"><state reason="syn-ack" state="open" reason_ttl="64"></state><service></service></port><port protocol="tcp" portid="21034"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21035"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="21036"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="49152"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port><port protocol="tcp" portid="59152"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="unknown"></service></port></ports><os><portused state="open" portid="53" proto="tcp"></portused><portused state="closed" portid="1" proto="tcp"></portused><osmatch line="25595" name="Fortinet FortiGate 100D firewall" accuracy="87"><osclass type="firewall" osfamily="embedded" vendor="Fortinet" osgen="" accuracy="87"></osclass></osmatch></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto=""><hop rtt="60.56" host="" ipaddr="172.20.10.9" ttl="1"></hop></trace></host><runstats><finished timestr="Sat Nov 23 23:27:40 2019" time="1574580460"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
